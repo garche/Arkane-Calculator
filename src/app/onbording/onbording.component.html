@@ -1,1 +1,16 @@
-<p>onbording works!</p>
+<div>
+  <div class="author">
+    <p>Консультант по методу А.А. Хшановской - психологичекий портрет личности</p>
+    <p>Катерина Путинцева</p>
+    <a type="button" href="https://taplink.cc/katerina.putintseva">Taplink</a>
+  </div>
+  <div>
+    <h1>Портрет личности</h1>
+    <h3>Рассчитайте психологический портрет личности по методу А. А. Хшановской на основе арканов по дате рождения</h3>
+    <div>
+      <label for="date">Введите дату рождения</label>
+      <input id="date" placeholder="дд-мм-гггг" [formControl]="date" (input)="userInputDate()">
+      <button (click)="goToPortrait()" [disabled]="!valueIsValid">Рассчитать</button>
+    </div>
+  </div>
+</div>
