@@ -1,0 +1,21 @@
+.block{
+  background: #FFFFFF;
+  border-radius: 15px;
+  width: 100%;
+  align-content: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  vertical-align: middle;
+}
+.arcane-value{
+  max-width: 95%;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 3vh;
+}
+p{
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+}
+

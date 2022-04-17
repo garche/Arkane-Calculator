@@ -1,12 +1,84 @@
-/*p{*/
-/*  font-family: 'Roboto';*/
-/*  font-style: normal;*/
-/*  font-weight: 400;*/
-/*  font-size: 22px;*/
-/*  line-height: 39px;*/
-/*  color: #E3E3E2;*/
-/*}*/
+h1{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4vw;
+}
+p, label, button{
+  font-family: 'Roboto', sans-serif;
+}
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vw;
+  font-weight: normal;
+}
+.all{
+  color: white;
+}
+.author{
+  margin: 3%;
+}
+.content{
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.but1{
+  border: 0;
+  border-radius: 5px;
+  width: 20%;
+  height: 5%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2vw;
+  padding: 2px;
+  color: white;
+  background: #CBA77C;
+}
 
-/*.main{*/
-/*  background: #92755F fixed;*/
-/*}*/
+.date{
+  border: none;
+  outline:none;
+  border-radius: 3px;
+  width: 20%;
+  height: 5%;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  font-size: 2vw;
+  padding: 2px;
+  color: #CBA77C;
+  background: white;
+}
+@media (max-device-width: 800px) {
+  .date, .but1 {
+    width: 50%;
+    height: 5%;
+    font-size: 5vw;
+  }
+  .taplink{
+    width: 25%;
+    font-size: 6vw;
+    height: 5%;
+  }
+}
+.taplink:hover,
+.taplink:active,
+.taplink{
+  border: 0;
+  text-decoration:none;
+  border-radius: 8px;
+  width: 20%;
+  height: 7%;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2vw;
+  color: white;
+  background: #CBA77C;
+}
+
+.picture {
+  width: 50%;
+}
+@media only screen and (min-device-width: 800px) {
+  .picture {
+    width: 33%;
+    margin-left: 40%;
+    display: inline;
+  }
+}

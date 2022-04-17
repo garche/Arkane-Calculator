@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto&display=swap');
+
+.onBoarding{
+  background: #92755F;
+}
+.portrait{
+  background: #E1DAD2;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  text-decoration: none
+}

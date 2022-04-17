@@ -1,16 +1,23 @@
-<div>
+<div class="all">
   <div class="author">
-    <p>Консультант по методу А.А. Хшановской - психологичекий портрет личности</p>
-    <p>Катерина Путинцева</p>
-    <a type="button" href="https://taplink.cc/katerina.putintseva">Taplink</a>
+    <p>Консультант по методу А.А. Хшановской - психологичекий портрет личности Катерина Путинцева</p>
+    <button class="taplink" (click)="openTapLink()" >Taplink</button>
   </div>
-  <div>
+  <div class="content">
     <h1>Портрет личности</h1>
-    <h3>Рассчитайте психологический портрет личности по методу А. А. Хшановской на основе арканов по дате рождения</h3>
-    <div>
-      <label for="date">Введите дату рождения</label>
-      <input id="date" placeholder="дд-мм-гггг" [formControl]="date" (input)="userInputDate()">
-      <button (click)="goToPortrait()" [disabled]="!valueIsValid">Рассчитать</button>
-    </div>
+      <h3>Рассчитайте психологический портрет личности по методу А. А. Хшановской на основе арканов по дате рождения</h3>
+      <div>
+        <label for="date">Введите дату рождения</label>
+        <br>
+        <br>
+        <input id="date" placeholder="дд-мм-гггг" class="date" [formControl]="date" (input)="userInputDate()">
+        <br>
+        <br>
+        <button class="but1" id="button" (click)="goToPortrait()">Рассчитать</button>
+        <br>
+        <br>
+        <br>
+        <img class="picture" src="first.svg">
+      </div>
   </div>
 </div>
