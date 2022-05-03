@@ -8,7 +8,9 @@
   vertical-align: middle;
 }
 .arcane-value{
-  max-width: 95%;
+  width: 85%;
+  min-width: 50px;
+  min-height: 35px;
   text-align: center;
   padding-left: 2%;
   padding-right: 2%;

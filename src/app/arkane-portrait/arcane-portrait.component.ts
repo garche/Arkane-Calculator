@@ -52,7 +52,6 @@ export class ArcanePortraitComponent implements OnInit {
     this.arcaneValue[20] = this.razor(this.arcaneValue[18] + this.arcaneValue[14]); //H
     this.arcaneValue[21] = this.razor(this.arcaneValue[16] + this.arcaneValue[17]); //G1
     this.arcaneValue[22] = this.razor(this.arcaneValue[15] + this.arcaneValue[19]); //G2
-    console.log(this.arcaneValue)
   }
 
   private razor = (value: number): number  => value > 22 ? this.razor(value - 22) : value
