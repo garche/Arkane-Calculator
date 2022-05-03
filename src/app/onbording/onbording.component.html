@@ -4,20 +4,26 @@
     <button class="taplink" (click)="openTapLink()" >Taplink</button>
   </div>
   <div class="content">
-    <h1>Портрет личности</h1>
-      <h3>Рассчитайте психологический портрет личности по методу А. А. Хшановской на основе арканов по дате рождения</h3>
+      <div class="read">
+        <h1>Портрет личности</h1>
+        <div class="read2">
+          <h3>Рассчитайте психологический портрет</h3>
+          <h3>личности по методу А. А. Хшановской на</h3>
+          <h3>основе арканов по дате рождения</h3>
+        </div>
+      </div>
       <div>
-        <label for="date">Введите дату рождения</label>
+        <div class="cInput">
+          <div style="display: flex; flex-direction: column">
+            <label for="date">Введите дату рождения</label>
+            <input id="date" placeholder="дд-мм-гггг" class="date" [formControl]="date" (input)="userInputDate()">
+          </div>
+          <button class="but1" id="button" (click)="goToPortrait()">Рассчитать</button>
+        </div>
         <br>
         <br>
-        <input id="date" placeholder="дд-мм-гггг" class="date" [formControl]="date" (input)="userInputDate()">
         <br>
-        <br>
-        <button class="but1" id="button" (click)="goToPortrait()">Рассчитать</button>
-        <br>
-        <br>
-        <br>
-        <img class="picture" src="first.svg">
+        <img class="picture" src="../../assets/svg/onbording.svg">
       </div>
   </div>
 </div>

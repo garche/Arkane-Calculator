@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-arkane-portrait',
@@ -11,10 +11,13 @@ export class ArcanePortraitComponent implements OnInit {
   public arcaneValue: number[] = []
 
   constructor(
+    private _router: Router,
     private _activatedRoute: ActivatedRoute
   ) {
-    document.body.classList.toggle("portrait");
     this.date = this._activatedRoute.snapshot.params['date']
+    if(!this.date){
+      this._router.navigateByUrl(`/`).then()
+    }
   }
 
   ngOnInit(): void {
@@ -49,6 +52,7 @@ export class ArcanePortraitComponent implements OnInit {
     this.arcaneValue[20] = this.razor(this.arcaneValue[18] + this.arcaneValue[14]); //H
     this.arcaneValue[21] = this.razor(this.arcaneValue[16] + this.arcaneValue[17]); //G1
     this.arcaneValue[22] = this.razor(this.arcaneValue[15] + this.arcaneValue[19]); //G2
+    console.log(this.arcaneValue)
   }
 
   private razor = (value: number): number  => value > 22 ? this.razor(value - 22) : value

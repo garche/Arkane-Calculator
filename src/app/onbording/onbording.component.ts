@@ -16,7 +16,6 @@ export class OnbordingComponent {
     private _router: Router,
     private _formBuilder: FormBuilder,
   ) {
-    document.body.classList.toggle("onBoarding");
     this.date =  new FormControl([''])
   }
 
